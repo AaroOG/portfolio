@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Varghese | Software Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         /* Custom Keyframe Animations */
         @keyframes fadeInUp {
@@ -76,7 +77,7 @@
                 <div class="pl-4 border-l-2 border-zinc-800 mb-6 mt-4">
                     <h1
                         class="text-4xl md:text-6xl font-extrabold tracking-tight text-zinc-100 mb-4 font-sans transition-all duration-300 hover:text-blue-100 hover:drop-shadow-[0_0_15px_rgba(96,165,250,0.6)] cursor-default">
-                        Aaron Varghese.
+                        Aaron Varghese
                     </h1>
                     <h2 class="text-2xl md:text-3xl font-bold text-zinc-400 mb-4 font-sans">
                         Building software & pushing limits.
@@ -84,7 +85,7 @@
                     <p class="max-w-2xl text-zinc-400 leading-relaxed font-sans text-base">
                         I'm a high school senior, competitive endurance runner, and aspiring computer science major.
                         Whether I'm logging miles on the trail or optimization testing codebase frameworks, I love
-                        pushing systems—and myself—to their absolute limits.
+                        pushing systems—and myself—to their absolute limit.
                     </p>
                 </div>
 
@@ -114,14 +115,14 @@
 
             <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 flex flex-col justify-center gap-4">
                 <div class="flex items-start gap-3">
-                    <span class="text-xl mt-0.5">🎖️</span>
+                    <i data-lucide="award" class="w-6 h-6 mt-0.5 text-yellow-500"></i>
                     <div>
                         <h4 class="font-bold text-zinc-200 text-sm">National Honor Society</h4>
                         <p class="text-xs text-zinc-500 font-mono mt-0.5">Selected Member</p>
                     </div>
                 </div>
                 <div class="flex items-start gap-3 border-t border-zinc-800/60 pt-4">
-                    <span class="text-xl mt-0.5">🇪🇸</span>
+                    <i data-lucide="globe" class="w-6 h-6 mt-0.5 text-blue-400"></i>
                     <div>
                         <h4 class="font-bold text-zinc-200 text-sm">National Spanish Honor Society</h4>
                         <p class="text-xs text-zinc-500 font-mono mt-0.5">Active Member</p>
@@ -131,7 +132,7 @@
 
             <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 md:col-span-3">
                 <h3 class="text-lg font-bold text-zinc-100 mb-4 flex items-center gap-2">
-                    <span class="text-blue-400">📚</span> Advanced Placement Coursework
+                    <i data-lucide="book-open" class="w-5 h-5 text-blue-400"></i> Advanced Placement Coursework
                 </h3>
                 <div class="flex flex-wrap gap-3 text-xs font-mono text-zinc-300">
                     <span
@@ -173,7 +174,8 @@
                 class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 transition-all duration-500 hover:border-blue-500/40 hover:bg-zinc-800/80 hover:shadow-[0_10px_30px_-15px_rgba(59,130,246,0.15)] flex flex-col justify-between h-full group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-2xl group-hover:scale-125 transition-transform duration-300">🤖</span>
+                        <i data-lucide="bot"
+                            class="w-8 h-8 group-hover:scale-125 transition-transform duration-300 text-zinc-300"></i>
                         <div class="flex flex-col items-end gap-1">
                             <a href="https://github.com/AaroOG/cedarparklibraryroomavailability" target="_blank"
                                 class="text-zinc-400 hover:text-blue-400 transition-colors duration-300 text-sm font-mono flex items-center gap-1">
@@ -212,7 +214,8 @@
                 class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 transition-all duration-500 hover:border-blue-500/40 hover:bg-zinc-800/80 hover:shadow-[0_10px_30px_-15px_rgba(59,130,246,0.15)] flex flex-col justify-between h-full group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-2xl group-hover:scale-125 transition-transform duration-300">📱</span>
+                        <i data-lucide="smartphone"
+                            class="w-8 h-8 group-hover:scale-125 transition-transform duration-300 text-zinc-300"></i>
                         <a href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPO" target="_blank"
                             class="text-zinc-400 hover:text-blue-400 transition-colors duration-300 text-sm font-mono flex items-center gap-1">
                             [Repository] ↗
@@ -247,7 +250,8 @@
                 class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 transition-all duration-500 hover:border-blue-500/40 hover:bg-zinc-800/80 hover:shadow-[0_10px_30px_-15px_rgba(59,130,246,0.15)] flex flex-col justify-between h-full group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-2xl group-hover:scale-125 transition-transform duration-300">🖥️</span>
+                        <i data-lucide="server"
+                            class="w-8 h-8 group-hover:scale-125 transition-transform duration-300 text-zinc-300"></i>
                         <span class="text-zinc-500 text-sm font-mono">[Infrastructure]</span>
                     </div>
                     <h3
@@ -277,14 +281,16 @@
                 class="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 transition-all duration-500 hover:border-blue-500/40 hover:bg-zinc-800/80 hover:shadow-[0_10px_30px_-15px_rgba(59,130,246,0.15)] flex flex-col justify-between h-full group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-2xl group-hover:scale-125 transition-transform duration-300">🎮</span>
+                        <i data-lucide="gamepad-2"
+                            class="w-8 h-8 group-hover:scale-125 transition-transform duration-300 text-zinc-300"></i>
                         <span class="text-zinc-500 text-sm font-mono">[Server]</span>
                     </div>
                     <h3
                         class="text-xl font-bold text-zinc-100 mb-2 group-hover:text-blue-400 transition-colors duration-300">
                         Minecraft Server Cluster</h3>
                     <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-                        Orchestrated high-concurrency dedicated Minecraft server clusters. Implemented extensive JVM tuning for optimal performance and minimal player latency.
+                        Orchestrated high-concurrency dedicated Minecraft server clusters. Implemented extensive JVM
+                        tuning for optimal performance and minimal player latency.
                     </p>
                 </div>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-400">
@@ -344,6 +350,9 @@
         EOF &bull; Built by Aaron Varghese &bull; Powered by Cloudflare DNS
     </footer>
 
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
