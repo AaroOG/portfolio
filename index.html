@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Varghese | Computer Science Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='30' fill='%2309090b' stroke='%2327272a' stroke-width='4'/><text x='50%' y='66%' font-size='46' font-weight='bold' fill='%2360A5FA' font-family='monospace' text-anchor='middle'>AV</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -39,6 +40,15 @@
         /* Smooth accordion animation for media dropdowns */
         details[open] summary~* {
             animation: fadeInUp 0.4s ease-out;
+        }
+
+        details summary span {
+            display: inline-block;
+            transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        details[open] summary span {
+            transform: rotate(90deg);
         }
     </style>
 </head>
@@ -216,9 +226,11 @@
                             class="text-xs font-mono text-zinc-500 hover:text-blue-400 cursor-pointer list-none flex items-center gap-1 select-none outline-none">
                             <span>▶</span> View Application Screenshot
                         </summary>
-                        <div class="mt-3 overflow-hidden rounded-lg bg-zinc-950 border border-zinc-800 p-1"><img
-                                src="assets/library.png" alt="Library Resource Automator Screenshot"
-                                class="w-full h-auto rounded"></div>
+                        <div
+                            class="mt-3 overflow-hidden rounded-lg bg-zinc-950 border border-zinc-800 p-1 cursor-zoom-in">
+                            <img src="assets/library.png" alt="Library Resource Automator Screenshot"
+                                class="w-full h-auto rounded lightbox-trigger">
+                        </div>
                     </details>
                 </div>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-400">
@@ -226,9 +238,8 @@
                         class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
                             src="https://cdn.simpleicons.org/python/60A5FA" class="w-3.5 h-3.5" alt="" />Python</span>
                     <span
-                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
-                            src="https://cdn.simpleicons.org/playwright/60A5FA" class="w-3.5 h-3.5"
-                            alt="" />Playwright</span>
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><i
+                            data-lucide="test-tube" class="w-3.5 h-3.5"></i>Playwright</span>
                 </div>
             </div>
 
@@ -238,17 +249,18 @@
                     <div class="flex justify-between items-start mb-4">
                         <i data-lucide="smartphone"
                             class="w-8 h-8 group-hover:scale-125 transition-transform duration-300 text-zinc-300"></i>
-                        <a href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPO" target="_blank"
+                        <a href="https://github.com/AaroOG/flutter-weather-app" target="_blank"
                             class="text-zinc-400 hover:text-blue-400 transition-colors duration-300 text-sm font-mono flex items-center gap-1">
                             [Repository] <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
                         </a>
                     </div>
                     <h3
                         class="text-xl font-bold text-zinc-100 mb-2 group-hover:text-blue-400 transition-colors duration-300">
-                        Minimalist Weather Utility</h3>
+                        Minimalist Weather Utility - SMPLWTHR</h3>
                     <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-                        Designed and compiled a lightweight cross-platform mobile utility that interfaces with public
-                        REST APIs to fetch real-time atmospheric data into an adaptive, telemetry-free UI.
+                        Mobile and web app used to add any location. Users can view the current weather, hourly, and
+                        weekly weather forecasts for any location, all while enjoying a simple and intuitive user
+                        experience. All weather information is brought in using OpenWeatherAPI.
                     </p>
                     <details class="mb-6 group/media">
                         <summary
@@ -282,19 +294,26 @@
                     </div>
                     <h3
                         class="text-xl font-bold text-zinc-100 mb-2 group-hover:text-blue-400 transition-colors duration-300">
-                        Bare-Metal Systems Lab</h3>
+                        Home Services (HomeLab)</h3>
                     <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-                        Deployed an enterprise virtualization hypervisor to optimize hardware bounds. Repurposed
-                        deprecated consumer computers into redundant NAS nodes.
+                        I run my own home server, and I've been learning how to maintain it, upgrade its hardware and
+                        software, and secure it against threats for an entrance into cybersecurity. I use Proxmox to
+                        virtualize different operating systems and services, creating a small-scale cloud environment
+                        right in my media room. As well as being able to access it outside of my network using
+                        Tailscale, TwinGate, and OpenVPN. I use new and old computers. Taking advantage of old AirPort
+                        Extremes. Being able to host a file server and just a whole lot of services locally, I find
+                        interesting.
                     </p>
                     <details class="mb-6 group/media">
                         <summary
                             class="text-xs font-mono text-zinc-500 hover:text-blue-400 cursor-pointer list-none flex items-center gap-1 select-none outline-none">
                             <span>▶</span> View System Topology
                         </summary>
-                        <div class="mt-3 overflow-hidden rounded-lg bg-zinc-950 border border-zinc-800 p-1"><img
-                                src="Screenshot 2026-06-27 at 12.41.42 AM.jpg" alt="Lab Dashboard View"
-                                class="w-full h-auto rounded"></div>
+                        <div
+                            class="mt-3 overflow-hidden rounded-lg bg-zinc-950 border border-zinc-800 p-1 cursor-zoom-in">
+                            <img src="assets/homepage.png" alt="Lab Dashboard View"
+                                class="w-full h-auto rounded lightbox-trigger">
+                        </div>
                     </details>
                 </div>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-400">
@@ -305,6 +324,23 @@
                     <span
                         class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><i
                             data-lucide="hard-drive" class="w-3.5 h-3.5"></i>NAS</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
+                            src="https://cdn.simpleicons.org/synology/60A5FA" class="w-3.5 h-3.5"
+                            alt="" />Synology</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
+                            src="https://cdn.simpleicons.org/docker/60A5FA" class="w-3.5 h-3.5" alt="" />Docker</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><i
+                            data-lucide="shield" class="w-3.5 h-3.5"></i>Twingate</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
+                            src="https://cdn.simpleicons.org/tailscale/60A5FA" class="w-3.5 h-3.5"
+                            alt="" />Tailscale</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
+                            src="https://cdn.simpleicons.org/openvpn/60A5FA" class="w-3.5 h-3.5" alt="" />OpenVPN</span>
                 </div>
             </div>
 
@@ -320,9 +356,20 @@
                         class="text-xl font-bold text-zinc-100 mb-2 group-hover:text-blue-400 transition-colors duration-300">
                         Minecraft Server Cluster</h3>
                     <p class="text-zinc-400 text-sm leading-relaxed mb-4">
-                        Orchestrated high-concurrency dedicated Minecraft server clusters. Implemented extensive JVM
-                        tuning for optimal performance and minimal player latency.
+                        Orchestrated high-concurrency dedicated Minecraft server clusters managed through Pterodactyl
+                        Panel. Implemented extensive JVM tuning for optimal performance and minimal player latency.
                     </p>
+                    <details class="mb-6 group/media">
+                        <summary
+                            class="text-xs font-mono text-zinc-500 hover:text-blue-400 cursor-pointer list-none flex items-center gap-1 select-none outline-none">
+                            <span>▶</span> View Panel Screenshot
+                        </summary>
+                        <div
+                            class="mt-3 overflow-hidden rounded-lg bg-zinc-950 border border-zinc-800 p-1 cursor-zoom-in">
+                            <img src="assets/pterodactyl panel.png" alt="Pterodactyl Panel Screenshot"
+                                class="w-full h-auto rounded lightbox-trigger">
+                        </div>
+                    </details>
                 </div>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-400">
                     <span
@@ -334,6 +381,9 @@
                     <span
                         class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><img
                             src="https://cdn.simpleicons.org/linux/60A5FA" class="w-3.5 h-3.5" alt="" />Linux</span>
+                    <span
+                        class="bg-zinc-950 px-2.5 py-1 rounded border border-zinc-800 inline-flex items-center gap-1.5"><i
+                            data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i>Pterodactyl</span>
                 </div>
             </div>
         </div>
@@ -343,23 +393,31 @@
         class="max-w-6xl mx-auto px-6 py-16 border-t border-zinc-800 mb-20 opacity-0 animate-fade-in-up"
         style="animation-delay: 500ms;">
         <h2 class="text-2xl font-bold text-zinc-200 mb-8 flex items-center font-mono">
-            <span class="text-blue-400 text-base mr-3">~/</span> Athletic Discipline & Grit
+            <span class="text-blue-400 text-base mr-3">~/</span> Athletics - Cross Country & Track
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6 items-stretch">
             <div
                 class="bg-zinc-900/30 border border-zinc-800 rounded-xl p-6 md:p-8 hover:border-zinc-700 transition-all duration-300 md:col-span-2 flex flex-col justify-center">
                 <p class="text-zinc-400 leading-relaxed mb-4">
-                    Beyond software engineering, I dedicate a massive portion of my lifecycle to competitive high school
-                    **Cross Country and Track**. Balancing demanding morning and evening practice workloads with deep
-                    programming pipelines requires extreme mental endurance.
+                    I’ve been running cross country since I was 12 years old. The tradition has been passed down from my
+                    dad to my brother to me. I’m very dedicated, averaging over 40 miles a week. I balance recovery to
+                    stay healthy and ready to compete and train. I’ve often led my varsity cross country team since I
+                    was a sophomore. I work to balance running and academics so I can become the best athletically and
+                    academically. I’m disciplined to wake up almost every morning at 6 am to run with my team. Over the
+                    years, I’ve developed endurance and resilience, which have helped me throughout all aspects of my
+                    life.
                 </p>
-                <p class="text-zinc-400 leading-relaxed">
-                    Surviving grueling multi-mile training blocks and dawn workouts has forged structured
-                    time-management skills and a stubborn resilience. When facing complex system latency spikes or deep
-                    debugging errors, the discipline acquired on the track translates directly into absolute persistence
-                    at the computer console.
-                </p>
+                <div class="mt-6 grid grid-cols-2 gap-4 border-t border-zinc-800/60 pt-6">
+                    <div>
+                        <span class="text-xs font-mono text-blue-400 uppercase tracking-wider">5K Personal Record</span>
+                        <div class="text-2xl font-bold text-zinc-100 mt-1 font-mono">16:11</div>
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono text-blue-400 uppercase tracking-wider">1600m Time</span>
+                        <div class="text-2xl font-bold text-zinc-100 mt-1 font-mono">4:49</div>
+                    </div>
+                </div>
             </div>
 
             <div
@@ -380,9 +438,21 @@
                 <div class="pt-4">
                     <span class="text-xs font-mono text-blue-400 uppercase tracking-wider">Watches</span>
                     <div class="text-xs text-zinc-400 font-mono mt-1">Garmin Forerunner 265S | Garmin Forerunner 45 |
-                        Apple Watch Series 5
+                         Apple Watch Series 5
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-6">
+            <div class="overflow-hidden rounded-xl bg-zinc-900/30 border border-zinc-800 aspect-[4/3] cursor-zoom-in flex items-center justify-center p-2 hover:border-zinc-700 transition-all duration-300">
+                <img src="assets/austin run.jpg" alt="Austin Run" class="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-500 lightbox-trigger">
+            </div>
+            <div class="overflow-hidden rounded-xl bg-zinc-900/30 border border-zinc-800 aspect-[4/3] cursor-zoom-in flex items-center justify-center p-2 hover:border-zinc-700 transition-all duration-300">
+                <img src="assets/miles.jpg" alt="Training Miles" class="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-500 lightbox-trigger">
+            </div>
+            <div class="overflow-hidden rounded-xl bg-zinc-900/30 border border-zinc-800 aspect-[4/3] cursor-zoom-in flex items-center justify-center p-2 hover:border-zinc-700 transition-all duration-300">
+                <img src="assets/vo2max.png" alt="VO2 Max" class="max-w-full max-h-full object-contain hover:scale-105 transition-transform duration-500 lightbox-trigger">
             </div>
         </div>
     </section>
@@ -391,8 +461,122 @@
         EOF &bull; Built by Aaron Varghese &bull; Powered by Cloudflare DNS
     </footer>
 
+    <!-- Image Lightbox Modal Overlay -->
+    <div id="lightbox"
+        class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm cursor-zoom-out">
+        <button id="lightbox-close"
+            class="absolute top-6 right-6 text-zinc-400 hover:text-zinc-100 transition-colors p-2"
+            aria-label="Close Lightbox">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        <div class="max-w-[90%] max-h-[90%] flex flex-col items-center">
+            <img id="lightbox-img" src="" alt=""
+                class="max-w-full max-h-[80vh] rounded-lg border border-zinc-800 object-contain shadow-2xl scale-95 transition-transform duration-300 cursor-default">
+            <p id="lightbox-caption" class="text-zinc-400 text-sm font-mono mt-4 text-center"></p>
+        </div>
+    </div>
+
     <script>
         lucide.createIcons();
+
+        // Lightbox script
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+
+        function openLightbox(imgSrc, altText) {
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = altText;
+            lightbox.classList.remove('hidden');
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightboxImg.src = '';
+                lightboxCaption.textContent = '';
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                openLightbox(trigger.src, trigger.alt || '');
+            });
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightboxClose || lightboxClose.contains(e.target)) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+
+        // Smooth details expansion/collapse controller
+        document.querySelectorAll('details').forEach(el => {
+            const summary = el.querySelector('summary');
+            const content = el.querySelector('summary ~ *');
+            let animation = null;
+            let isClosing = false;
+            let isExpanding = false;
+
+            summary.addEventListener('click', (e) => {
+                e.preventDefault();
+                el.style.overflow = 'hidden';
+                if (isClosing || !el.open) {
+                    // Open
+                    el.style.height = `${el.offsetHeight}px`;
+                    el.open = true;
+                    window.requestAnimationFrame(() => {
+                        isExpanding = true;
+                        const startHeight = `${el.offsetHeight}px`;
+                        // add extra margin spacing to match design padding
+                        const endHeight = `${summary.offsetHeight + content.offsetHeight + 16}px`;
+                        if (animation) animation.cancel();
+                        animation = el.animate(
+                            { height: [startHeight, endHeight] },
+                            { duration: 150, easing: 'cubic-bezier(0.16, 1, 0.3, 1)' }
+                        );
+                        animation.onfinish = () => {
+                            el.style.height = '';
+                            el.style.overflow = '';
+                            isExpanding = false;
+                        };
+                    });
+                } else if (isExpanding || el.open) {
+                    // Close
+                    isClosing = true;
+                    const startHeight = `${el.offsetHeight}px`;
+                    const endHeight = `${summary.offsetHeight}px`;
+                    if (animation) animation.cancel();
+                    animation = el.animate(
+                        { height: [startHeight, endHeight] },
+                        { duration: 120, easing: 'cubic-bezier(0.16, 1, 0.3, 1)' }
+                    );
+                    animation.onfinish = () => {
+                        el.open = false;
+                        el.style.height = '';
+                        el.style.overflow = '';
+                        isClosing = false;
+                    };
+                }
+            });
+        });
     </script>
 </body>
 
